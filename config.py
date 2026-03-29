@@ -1,0 +1,29 @@
+import os
+
+BASE_URL = "https://api.bilibili.com"
+
+QUALITY_MAP = {
+    127: "8K",
+    126: "杜比视界",
+    125: "HDR",
+    120: "4K",
+    116: "1080P60",
+    112: "1080P+",
+    80: "1080P",
+    74: "720P60",
+    64: "720P",
+    48: "720P",
+    32: "480P",
+    16: "360P"
+}
+
+REQUEST_DELAY_MIN = 5
+REQUEST_DELAY_MAX = 10
+
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
+MAX_CONCURRENT = 2
+
+STATIC_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")
+
+COOKIE = "buvid3=7BCC9292-70FE-21DF-F4AF-E5051DE928AF84629infoc; b_nut=1774712684; _uuid=D39C101017-F8D5-C434-2E10A-1D7121EA83E286850infoc; home_feed_column=4; browser_resolution=1299-764; buvid4=DAEBCF77-66D1-1D4B-3E69-C6FF7C3B2BDB86425-026032823-vhx2s8W3foLq8uOgDjKUbh3UtR/gXOV7gbPXL76DNYZfLjEnCk9k5KZO0oR5Ls3z; bili_ticket=eyJhbGciOiJIUzI1NiIsImtpZCI6InMwMyIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzQ5NzE4ODYsImlhdCI6MTc3NDcxMjYyNiwicGx0IjotMX0.X_oFRdqthgX4wuvepr2fUZFnLu2zpDJHPb2fSvqQy_Q; bili_ticket_expires=1774971826; buvid_fp=3541dd1f00288767697c3bb382ed2cf4; SESSDATA=9ea7f816%2C1790264721%2C02071%2A32CjC3hMduUNuRMyfTx7gI-yTP8VEGTASlUe1mKfzaNaldJU0sMzCzzjg2ZGAUe7A6f4QSVkU4SV9BVGplZnZROXRRSFJCM2ZvU3NYMXYyVTJEMWNRdm41T3FsV1pnR2k4UEFJS2JObnRkZGVyUVVMX1JsMHNuQXhPUm1LbjlWeFFEdlZ6QjFVa25nIIEC; bili_jct=bffba364051e28074e627cd3942f3cb7; DedeUserID=3706958940997709; DedeUserID__ckMd5=2ee78592405153a6; sid=e1ld1a8m; theme-tip-show=SHOWED; theme-avatar-tip-show=SHOWED; bp_t_offset_3706958940997709=1184871207976042496; b_lsid=3EC6CA00_19D351F4AD6"
